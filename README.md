@@ -1,4 +1,4 @@
-# flipcatalog# Díszkertek – Digitális katalógus
+# flipcatalog Díszkertek – Digitális katalógus
 
 Ez a projekt egy interaktív, lapozható webes katalógus, amely bemutatja a Díszkertek csapatának munkáját, szolgáltatásait és referenciáit. 🌿
 

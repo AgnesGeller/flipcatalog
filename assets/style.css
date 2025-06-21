@@ -189,3 +189,22 @@ form .form-control, form .form-select {
     opacity: 1;
   }
 }
+
+.qr-image {
+  max-width: 140px;
+  margin: 20px auto;
+  display: block;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
+.qr-caption {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
+/* Vékony vízszintes elválasztó */
+hr {
+  border-top: 1px solid #cccccc;
+}
