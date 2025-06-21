@@ -4,22 +4,65 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Díszkertek Katalógus</title>
-  <link rel="icon" href="./assets/img/Kép. (1).png" type="image/png" />
+  <link rel="icon" href="./assets/img/favicon.png" type="image/png" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/style.css" />
 </head>
 <body>
-  <header class="text-center my-4">
-    <img src="./assets/img/Kép. (3).png" alt="Díszkertek logó" style="max-height: 100px;" />
-    <h1 class="my-3">Díszkertek – Digitális katalógus</h1>
-  </header>
-
+ <!-- Látványos fejléc háttérrel -->
+<header class="hero-header text-white text-center py-5">
+  <div class="container">
+    <img src="./assets/img/feher.png" alt="Díszkertek logó" style="max-height: 90px;" class="mb-3" />
+    <h1 class="display-5 fw-bold animate-fade-in">Díszkertek – Digitális katalógus</h1>
+    <p class="lead animate-fade-in delay-1">Természetes megoldások a kert minden évszakára</p>
+  </div>
+</header>
   <main class="container book">
-    <!-- Oldal 1 -->
-    <section class="page p-4">
-      <h3 class="text-center mb-3">🌳 Rólunk</h3>
-      <p class="text-center">A Díszkertek Magyarország egyik vezető kertépítő cége. Szemet gyönyörködtető zöldterületeket, dizájnos kerti megoldásokat készítünk. Lapozz tovább projektjeinkért!</p>
-    </section>
+   <!-- Oldal 1 – Bemutatkozás -->
+<section class="page p-4">
+  <h2 class="text-center mb-4 animate-fade-in">🌿 Miért válasszon minket?</h2>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+    <!-- Minőség -->
+    <div class="col">
+      <div class="p-3 border rounded bg-light-green shadow-sm h-100 animate-rise">
+        <h4 class="text-success mb-3">✔️ Minőség</h4>
+        <ul class="list-unstyled">
+          <li>🌱 Jó minőségű magok</li>
+          <li>🌼 Tápanyaggal feltöltött növények</li>
+          <li>🧪 Hatékony, ipari növényvédő szerek</li>
+          <li>🔧 Profi kézi és gépi felszerelés</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Megbízhatóság -->
+    <div class="col">
+      <div class="p-3 border rounded bg-light-green shadow-sm h-100 animate-rise delay-1">
+        <h4 class="text-primary mb-3">🔒 Megbízhatóság</h4>
+        <ul class="list-unstyled">
+          <li>👷‍♂️ Szakképzett csapat</li>
+          <li>🌐 Széleskörű kapcsolati háló</li>
+          <li>⏱️ Határidők betartása</li>
+          <li>🏢 10+ éves működés</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Gyorsaság -->
+    <div class="col">
+      <div class="p-3 border rounded bg-light-green shadow-sm h-100 animate-rise delay-2">
+        <h4 class="text-warning mb-3">⚡ Gyorsaság</h4>
+        <ul class="list-unstyled">
+          <li>📞 Könnyű elérhetőség</li>
+          <li>📍 Díjmentes helyszíni felmérés</li>
+          <li>🚀 Hatékony, gyors munkavégzés</li>
+          <li>🤝 Szervezett csapat</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Oldal 2 -->
     <section class="page p-4">
@@ -199,6 +242,23 @@
       <button type="submit" class="btn btn-success btn-lg">📩 Megrendelem a csomagot</button>
     </div>
   </form>
+</section>
+
+<!-- Oldal 9 – Videós bemutató -->
+<section class="page p-4 text-center">
+  <h3 class="mb-4 animate-fade-in">🎬 Munkáink mozgásban</h3>
+
+  <video controls autoplay muted loop style="max-width: 100%; border-radius: 8px;">
+    <source src="./assets/img/movi.mp4" type="video/mp4" />
+    A böngésződ sajnos nem támogatja a beágyazott videólejátszást.
+  </video>
+
+   <video controls autoplay muted loop style="max-width: 100%; border-radius: 8px;">
+    <source src="./assets/img/movie.mp4" type="video/mp4" />
+    A böngésződ sajnos nem támogatja a beágyazott videólejátszást.
+  </video>
+
+  <p class="mt-3">Tekintsd meg projektjeinket munka közben! 💚<br />Kérdés vagy ajánlatkérés esetén várjuk a megrendelő űrlapon!</p>
 </section>
 
   <!-- Modális nagyítók -->
