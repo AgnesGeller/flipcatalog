@@ -161,3 +161,31 @@ form .form-control, form .form-select {
     opacity: 1;
   }
 }
+
+.video-box {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.video-box:hover {
+  transform: scale(1.02);
+}
+
+.video-caption {
+  font-size: 0.95rem;
+  color: #444;
+  font-style: italic;
+}
+
+/* Animáció (ha még nincs a fájlban) */
+.animate-fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
