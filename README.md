@@ -12,7 +12,7 @@ Ez a projekt egy interaktív, lapozható webes katalógus, amely bemutatja a Dí
 
 ## Elérhető Netlify-on
 
-👉 [Megtekintés online](https://<netlify-link-helye>) *(link frissítendő deploy után)*
+👉 [Megtekintés online](https://diszkertek.netlify.app/) *(link frissítendő deploy után)*
 
 ## Használat
 
