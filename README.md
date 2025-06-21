@@ -22,4 +22,4 @@ Ez a projekt egy interaktív, lapozható webes katalógus, amely bemutatja a Dí
 
 ## Képernyőkép
 
-![Katalógus előnézet](./assets/img/readme-preview.png)
+![Katalógus előnézet](./assets/img/readme.png)
