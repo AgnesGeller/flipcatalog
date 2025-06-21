@@ -1,0 +1,76 @@
+body {
+  background-color: #f4f9f4;
+  font-family: "Segoe UI", sans-serif;
+}
+
+header h1 {
+  color: #2e7d32;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.page {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  transition: all 0.4s ease;
+}
+
+.thumb {
+  max-width: 90%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.thumb:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px 6px 0 0;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  color: #2e7d32;
+}
+
+.card-text {
+  font-size: 0.95rem;
+}
+
+.page small {
+  font-style: italic;
+}
+
+.page img.shadow {
+  transition: transform 0.3s ease;
+}
+
+.page img.shadow:hover {
+  transform: scale(1.03);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card ul {
+  padding-left: 1rem;
+}
+
+.card h6 {
+  font-weight: bold;
+}
+
+form .form-control, form .form-select {
+  border-radius: 6px;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
+}

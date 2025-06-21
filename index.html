@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Díszkertek Katalógus</title>
+  <link rel="icon" href="./assets/img/Kép. (1).png" type="image/png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body>
+  <header class="text-center my-4">
+    <img src="./assets/img/Kép. (3).png" alt="Díszkertek logó" style="max-height: 100px;" />
+    <h1 class="my-3">Díszkertek – Digitális katalógus</h1>
+  </header>
+
+  <main class="container book">
+    <!-- Oldal 1 -->
+    <section class="page p-4">
+      <h3 class="text-center mb-3">🌳 Rólunk</h3>
+      <p class="text-center">A Díszkertek Magyarország egyik vezető kertépítő cége. Szemet gyönyörködtető zöldterületeket, dizájnos kerti megoldásokat készítünk. Lapozz tovább projektjeinkért!</p>
+    </section>
+
+    <!-- Oldal 2 -->
+    <section class="page p-4">
+      <h3 class="text-center mb-3">🪴 Projekt 1 – Előkert térkövezés</h3>
+      <div class="text-center">
+        <img src="./assets/img/Kép. (1).jpg" class="img-thumbnail thumb" data-bs-toggle="modal" data-bs-target="#modalKep1" />
+      </div>
+    </section>
+
+    <!-- Oldal 3 -->
+    <section class="page p-4">
+      <h3 class="text-center mb-3">🌼 Projekt 2 – Dísznövénybeültetés</h3>
+      <div class="text-center">
+        <img src="./assets/img/Kép. (2).jpg" class="img-thumbnail thumb" data-bs-toggle="modal" data-bs-target="#modalKep2" />
+      </div>
+    </section>
+  </main>
+<!-- Oldal 4 – Kertépítés videó -->
+<section class="page p-4">
+  <h3 class="text-center mb-3">🎬 Kertépítés lépésről lépésre</h3>
+  <div class="ratio ratio-16x9">
+    <iframe 
+      src="https://www.youtube.com/embed/0SFtx0tUwV4" 
+      title="Kertépítés videó" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+<!-- Oldal 5 – Növénykatalógus -->
+<section class="page p-4">
+  <h3 class="text-center mb-4">🌱 Növénykatalógus</h3>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+    <!-- Növénykártyák -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="./assets/img/buxus1 (1).jpg" class="card-img-top" alt="Buxus sempervirens">
+        <div class="card-body">
+          <h5 class="card-title">Buxus sempervirens</h5>
+          <p class="card-text">Ár: 2 490 Ft</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="assets/img/hortenzia.jpg" class="card-img-top" alt="Hortenzia 'Annabelle'">
+        <div class="card-body">
+          <h5 class="card-title">Hortenzia 'Annabelle'</h5>
+          <p class="card-text">Ár: 3 200 Ft</p>
+        </div>
+      </div>
+    </div>
+    <!-- ... ismételd 13-szor különböző növényekkel -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="assets/img/tiszafa.jpg" class="card-img-top" alt="Tiszafa (Taxus baccata)">
+        <div class="card-body">
+          <h5 class="card-title">Tiszafa (Taxus baccata)</h5>
+          <p class="card-text">Ár: 4 990 Ft</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!-- Oldal 6 – Elégedett ügyfelek -->
+<section class="page p-4">
+  <h3 class="text-center mb-4">💬 Elégedett ügyfeleink</h3>
+
+  <div class="row row-cols-1 row-cols-md-2 g-4 mb-4">
+    <div class="col">
+      <div class="p-3 border rounded shadow-sm bg-light h-100">
+        <p class="mb-2">„A kertünk teljesen újjászületett. A csapat precíz, gyors és nagyon segítőkész volt.”</p>
+        <small class="text-muted">– Katalin (Székesfehérvár)</small>
+      </div>
+    </div>
+    <div class="col">
+      <div class="p-3 border rounded shadow-sm bg-light h-100">
+        <p class="mb-2">„Imádjuk az új kerti tavat! A növények is gyönyörűen beálltak.”</p>
+        <small class="text-muted">– Ádám és Noémi (Veresegyház)</small>
+      </div>
+    </div>
+    <div class="col">
+      <div class="p-3 border rounded shadow-sm bg-light h-100">
+        <p class="mb-2">„Az első pillanattól profi kiszolgálást kaptunk. Biztosan rendelünk még!”</p>
+        <small class="text-muted">– Erika (Győr)</small>
+      </div>
+    </div>
+    <div class="col">
+      <div class="p-3 border rounded shadow-sm bg-light h-100">
+        <p class="mb-2">„A katalógus alapján választottam, és pontosan azt kaptam, amit szerettem volna.”</p>
+        <small class="text-muted">– Tamás (Békéscsaba)</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center">
+    <img src="./assets/img/Kép. (25).jpg" class="img-fluid rounded mb-3 shadow" style="max-width: 80%;" alt="Referencia kert 1" />
+    <p class="text-muted">Egy ügyfél kedvenc japánkertje – tele a mi növényeinkkel 🌿</p>
+  </div>
+</section>
+
+<!-- Oldal 7 – Szolgáltatási csomagok és árlista -->
+<section class="page p-4">
+  <h3 class="text-center mb-4">📦 1 éves szolgáltatási csomagjaink</h3>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100 border-success">
+        <div class="card-body">
+          <h5 class="card-title text-success">🌿 Alap csomag</h5>
+          <ul class="list-unstyled mb-3">
+            <li>✔ Egyszeri kertfelmérés</li>
+            <li>✔ Alapvető metszések (2x/év)</li>
+            <li>✔ Tápanyag utánpótlási tanácsadás</li>
+          </ul>
+          <h6 class="text-muted">Ár: 89 900 Ft / év</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 border-primary">
+        <div class="card-body">
+          <h5 class="card-title text-primary">🌼 Prémium csomag</h5>
+          <ul class="list-unstyled mb-3">
+            <li>✔ Rendszeres ápolás (4x/év)</li>
+            <li>✔ Növénycsere ajánlások</li>
+            <li>✔ Öntözőrendszer ellenőrzés</li>
+          </ul>
+          <h6 class="text-muted">Ár: 149 000 Ft / év</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 border-warning">
+        <div class="card-body">
+          <h5 class="card-title text-warning">🏡 Exkluzív csomag</h5>
+          <ul class="list-unstyled mb-3">
+            <li>✔ Minden hónapban kertkarbantartás</li>
+            <li>✔ Egyedi növénytanácsadás & design</li>
+            <li>✔ Kedvezmények vásárlásra</li>
+          </ul>
+          <h6 class="text-muted">Ár: 249 000 Ft / év</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!-- Oldal 8 – Megrendelés -->
+<section class="page p-4" id="order">
+  <h3 class="text-center mb-3">📬 Megrendelés</h3>
+  <p class="text-center mb-4">Töltsd ki az alábbi űrlapot, és csapatunk 1 munkanapon belül felveszi veled a kapcsolatot!</p>
+
+  <form action="https://formspree.io/f/mldnwoab" method="POST" class="mx-auto" style="max-width: 600px;">
+    <div class="mb-3">
+      <label for="name" class="form-label">Név</label>
+      <input type="text" class="form-control" id="name" name="név" required />
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email cím</label>
+      <input type="email" class="form-control" id="email" name="email" required />
+    </div>
+    <div class="mb-3">
+      <label for="package" class="form-label">Választott csomag</label>
+      <select class="form-select" id="package" name="csomag">
+        <option>Alap csomag – 89 900 Ft</option>
+        <option>Prémium csomag – 149 000 Ft</option>
+        <option>Exkluzív csomag – 249 000 Ft</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Megjegyzés (opcionális)</label>
+      <textarea class="form-control" id="message" name="megjegyzés" rows="3"></textarea>
+    </div>
+    <div class="d-grid">
+      <button type="submit" class="btn btn-success btn-lg">📩 Megrendelem a csomagot</button>
+    </div>
+  </form>
+</section>
+
+  <!-- Modális nagyítók -->
+  <div class="modal fade" id="modalKep1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark">
+        <img src="./assets/img/Kép. (3).jpg" class="img-fluid rounded" alt="Előkert térkő" />
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalKep2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark">
+        <img src="./assets/img/Kép. (4).jpg" class="img-fluid rounded" alt="Dísznövények" />
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/script.js"></script>
+</body>
+</html>
