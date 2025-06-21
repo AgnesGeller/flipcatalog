@@ -225,3 +225,80 @@ hr {
   margin-top: 10px;
   opacity: 0.9;
 }
+
+.thankyou-box {
+  background-color: #e6f4ea;
+  border-left: 6px solid #2e7d32;
+  border-radius: 6px;
+  color: #2e7d32;
+  max-width: 500px;
+  margin: 40px auto 0 auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.telefon-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  color: #7b0046; /* Erős, sötétrózsaszín árnyalat */
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.telefon-link:hover {
+  color: #5e1b42; /* Hover-re lilás szín */
+}
+
+/* Aláhúzás effekt */
+.telefon-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.telefon-link:hover::after {
+  transform: scaleX(1);
+}
+
+/* 📞 ikon csillanó animáció */
+.telefon-link .icon {
+  display: inline-block;
+  animation: none;
+}
+
+.telefon-link:hover .icon {
+  animation: shine 1.2s ease-in-out;
+}
+
+@keyframes shine {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(1.15) rotate(8deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1) rotate(-8deg);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(1.15) rotate(8deg);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}

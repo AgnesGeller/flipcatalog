@@ -9,12 +9,19 @@
   <link rel="stylesheet" href="./assets/style.css" />
 </head>
 <body>
- <!-- Látványos fejléc háttérrel -->
+<!-- Látványos fejléc háttérrel -->
 <header class="hero-header text-white text-center py-5">
   <div class="container">
     <img src="./assets/img/feher.png" alt="Díszkertek logó" style="max-height: 90px;" class="mb-3" />
     <h1 class="display-5 fw-bold animate-fade-in">Díszkertek – Digitális katalógus</h1>
     <p class="lead animate-fade-in delay-1">Természetes megoldások a kert minden évszakára</p>
+
+    <!-- Telefonszám linkként -->
+   <p class="text-center mt-3">
+  <a href="tel:+36301234567" class="telefon-link">
+    <span class="icon">📞</span> +36 30 123 4567 – Hívj most!
+  </a>
+</p>
   </div>
 </header>
   <main class="container book">
@@ -212,15 +219,17 @@
     </div>
   </div>
   </section>
-  <!-- Oldal 8 – Megrendelés -->
+ <!-- Oldal 8 – Megrendelés -->
 <section class="page p-4" id="order">
   <h3 class="text-center mb-3">📬 Megrendelés</h3>
-  <p class="text-center mb-4">Töltsd ki az alábbi űrlapot, és csapatunk 1 munkanapon belül felveszi veled a kapcsolatot!</p>
+  <p class="text-center mb-4">
+    Töltsd ki az alábbi űrlapot, és csapatunk 1 munkanapon belül felveszi veled a kapcsolatot!
+  </p>
 
-  <form action="https://formspree.io/f/mldnwoab" method="POST" class="mx-auto" style="max-width: 600px;">
+  <form id="orderForm" class="mx-auto" style="max-width: 600px;">
     <div class="mb-3">
       <label for="name" class="form-label">Név</label>
-      <input type="text" class="form-control" id="name" name="név" required />
+      <input type="text" class="form-control" id="name" name="nev" required />
     </div>
     <div class="mb-3">
       <label for="email" class="form-label">Email cím</label>
@@ -236,14 +245,23 @@
     </div>
     <div class="mb-3">
       <label for="message" class="form-label">Megjegyzés (opcionális)</label>
-      <textarea class="form-control" id="message" name="megjegyzés" rows="3"></textarea>
+      <textarea class="form-control" id="message" name="megjegyzes" rows="3"></textarea>
     </div>
     <div class="d-grid">
       <button type="submit" class="btn btn-success btn-lg">📩 Megrendelem a csomagot</button>
     </div>
   </form>
-</section>
 
+  <!-- Visszajelző üzenet -->
+  <div id="thankYouMessage" class="alert alert-success mt-4 d-none text-center">
+    🎉 Köszönjük a megrendelést! Hamarosan felvesszük veled a kapcsolatot.
+  </div>
+  <div id="thankYouMessage" class="thankyou-box d-none text-center p-4">
+  <h4 class="mb-3">🎉 Köszönjük a megrendelést!</h4>
+  <p class="mb-2">Üzeneted megérkezett hozzánk.</p>
+  <p class="small text-muted">Munkatársunk hamarosan felveszi veled a kapcsolatot.</p>
+</div>
+</section>
 <!-- Oldal 9 – Videós bemutató -->
 <section class="page p-4 text-center">
   <h3 class="mb-4 animate-fade-in">🎬 Munkáink videón – előtte és utána</h3>
@@ -288,6 +306,12 @@
   <p class="mt-4 small text-muted">
     📧 info@diszkertek.hu &nbsp;&nbsp; | &nbsp;&nbsp; 📞 +36 70 634 9630
   </p>
+    <!-- Telefonszám linkként -->
+   <p class="text-center mt-3">
+  <a href="tel:+36301234567" class="telefon-link">
+    <span class="icon">📞</span> +36 30 123 4567 – Hívj most!
+  </a>
+</p>
   <div class="mt-5 signature text-center">
   <p class="mb-2">Üdvözlettel:</p>
   <p class="sig-name">🌿 Díszkertek csapata</p>
