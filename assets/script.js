@@ -7,18 +7,28 @@ document.addEventListener("DOMContentLoaded", function () {
   if (form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
-      form.classList.add("d-none");
-      if (thankYou) {
-        thankYou.classList.remove("d-none");
-      }
 
-      const data = {
-        nev: form.nev.value,
-        email: form.email.value,
-        csomag: form.csomag.value,
-        megjegyzes: form.megjegyzes.value
-      };
-      localStorage.setItem("megrendeles", JSON.stringify(data));
+      const formData = new FormData(form);
+
+      fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: { Accept: "application/json" }
+      })
+        .then(response => {
+          if (response.ok) {
+            form.classList.add("d-none");
+            if (thankYou) {
+              thankYou.classList.remove("d-none");
+            }
+          } else {
+            alert("Hiba történt az elküldéskor. Kérlek próbáld meg később.");
+          }
+        })
+        .catch(error => {
+          alert("Hálózati hiba. Ellenőrizd a kapcsolatot!");
+          console.error("Hiba:", error);
+        });
     });
   }
 });

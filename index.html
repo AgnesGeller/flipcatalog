@@ -71,21 +71,78 @@
   </div>
 </section>
 
-    <!-- Oldal 2 -->
-    <section class="page p-4">
-      <h3 class="text-center mb-3">🪴 Projekt 1 – Előkert térkövezés</h3>
-      <div class="text-center">
-        <img src="./assets/img/Kép. (1).jpg" class="img-thumbnail thumb" data-bs-toggle="modal" data-bs-target="#modalKep1" />
-      </div>
-    </section>
+   <!-- Projektgaléria – Bootstrap Carousel -->
+<section class="page p-4" id="projektek">
+  <h3 class="text-center mb-4">🌿 Kiemelt projektjeink</h3>
 
-    <!-- Oldal 3 -->
-    <section class="page p-4">
-      <h3 class="text-center mb-3">🌼 Projekt 2 – Dísznövénybeültetés</h3>
-      <div class="text-center">
-        <img src="./assets/img/Kép. (2).jpg" class="img-thumbnail thumb" data-bs-toggle="modal" data-bs-target="#modalKep2" />
+  <div id="projektCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-inner rounded shadow">
+
+      <!-- Projekt 1 -->
+      <div class="carousel-item text-center">
+        <img src="./assets/img/munka (2).jpeg" class="d-block mx-auto img-fluid" alt="Projekt 2 – Dísznövénybeültetés" style="max-height: 400px;" />
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+          <h5 class="text-light">🌼 Dísznövénybeültetés</h5>
+          <p class="text-light small">Színes, gondozásbarát beültetés – időtálló kertkialakítás</p>
+        </div>
       </div>
-    </section>
+       <!-- Projekt 2 -->
+      <div class="carousel-item active text-center">
+        <img src="./assets/img/munka (4).jpeg" class="d-block mx-auto img-fluid" alt="Projekt 1 – Előkert térkövezés" style="max-height: 400px;" />
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+          <h5 class="text-light">🪴 Előkert térkövezés</h5>
+          <p class="text-light small">Modern előkert térkővel – tiszta vonalak, letisztult formák</p>
+        </div>
+      </div>
+
+      <!-- Projekt 3 -->
+      <div class="carousel-item text-center">
+        <img src="./assets/img//munka (5).jpeg" class="d-block mx-auto img-fluid" alt="Projekt 2 – Dísznövénybeültetés" style="max-height: 400px;" />
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+          <h5 class="text-light">🌼 Dísznövénybeültetés</h5>
+          <p class="text-light small">Színes, gondozásbarát beültetés – időtálló kertkialakítás</p>
+        </div>
+      </div>
+
+    <!-- Projekt 4 -->
+    <div class="carousel-item text-center">
+      <img src="./assets/img/munka (14).jpeg" class="d-block mx-auto img-fluid" alt="Projekt 3 – Tóépítés" style="max-height: 400px;" />
+      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+        <h5 class="text-light">🌊 Kerti tó kialakítása</h5>
+        <p class="text-light small">Tómeder formázás, szegélykövezés és vízinövények beültetése</p>
+      </div>
+    </div>
+
+    <!-- Projekt 5 -->
+<div class="carousel-item text-center">
+  <img src="./assets/img/munka (6).jpeg" class="d-block mx-auto img-fluid" alt="Projekt 3 – Tóépítés" style="max-height: 400px;" />
+  <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+    <h5 class="text-light">🌊 Kerti tó kialakítása</h5>
+    <p class="text-light small">Tómeder formázás, szegélykövezés és vízinövények beültetése</p>
+  </div>
+</div>
+
+<div class="carousel-item text-center">
+  <img src="./assets/img/munka (16).jpeg" class="d-block mx-auto img-fluid" alt="Projekt 3 – Fűmag vetés" style="max-height: 400px;" />
+  <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+    <h5 class="text-light">🌾 Fűmag vetés</h5>
+    <p class="text-light small">Új pázsit kialakítása gyorsan és egyenletesen</p>
+  </div>
+</div>
+
+    </div>
+
+    <!-- Lapozó nyilak -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#projektCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Előző</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#projektCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Következő</span>
+    </button>
+  </div>
+</section>
   </main>
 <!-- Oldal 4 – Kertépítés videó -->
 <section class="page p-4">
@@ -218,7 +275,6 @@
       </div>
     </div>
   </div>
-  </section>
  <!-- Oldal 8 – Megrendelés -->
 <section class="page p-4" id="order">
   <h3 class="text-center mb-3">📬 Megrendelés</h3>
@@ -226,15 +282,19 @@
     Töltsd ki az alábbi űrlapot, és csapatunk 1 munkanapon belül felveszi veled a kapcsolatot!
   </p>
 
-  <form id="orderForm" class="mx-auto" style="max-width: 600px;">
+  <form id="orderForm" action="https://formspree.io/f/mldnwoab" method="POST" class="mx-auto" style="max-width: 600px;">
+    <input type="hidden" name="_redirect" value="#" />
+    
     <div class="mb-3">
       <label for="name" class="form-label">Név</label>
-      <input type="text" class="form-control" id="name" name="nev" required />
+      <input type="text" class="form-control" id="name" name="név" required />
     </div>
+
     <div class="mb-3">
       <label for="email" class="form-label">Email cím</label>
       <input type="email" class="form-control" id="email" name="email" required />
     </div>
+
     <div class="mb-3">
       <label for="package" class="form-label">Választott csomag</label>
       <select class="form-select" id="package" name="csomag">
@@ -243,24 +303,23 @@
         <option>Exkluzív csomag – 249 000 Ft</option>
       </select>
     </div>
+
     <div class="mb-3">
       <label for="message" class="form-label">Megjegyzés (opcionális)</label>
-      <textarea class="form-control" id="message" name="megjegyzes" rows="3"></textarea>
+      <textarea class="form-control" id="message" name="megjegyzés" rows="3"></textarea>
     </div>
+
     <div class="d-grid">
       <button type="submit" class="btn btn-success btn-lg">📩 Megrendelem a csomagot</button>
     </div>
   </form>
 
-  <!-- Visszajelző üzenet -->
-  <div id="thankYouMessage" class="alert alert-success mt-4 d-none text-center">
-    🎉 Köszönjük a megrendelést! Hamarosan felvesszük veled a kapcsolatot.
-  </div>
+  <!-- Köszönő doboz -->
   <div id="thankYouMessage" class="thankyou-box d-none text-center p-4">
-  <h4 class="mb-3">🎉 Köszönjük a megrendelést!</h4>
-  <p class="mb-2">Üzeneted megérkezett hozzánk.</p>
-  <p class="small text-muted">Munkatársunk hamarosan felveszi veled a kapcsolatot.</p>
-</div>
+    <h4 class="mb-3">🎉 Köszönjük a megrendelést!</h4>
+    <p class="mb-2">Üzeneted megérkezett hozzánk.</p>
+    <p class="small text-muted">Munkatársunk hamarosan felveszi veled a kapcsolatot.</p>
+  </div>
 </section>
 <!-- Oldal 9 – Videós bemutató -->
 <section class="page p-4 text-center">
@@ -317,14 +376,6 @@
   <p class="sig-name">🌿 Díszkertek csapata</p>
 </section>
 
-  <!-- Modális nagyítók -->
-  <div class="modal fade" id="modalKep1" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content bg-dark">
-        <img src="./assets/img/Kép. (3).jpg" class="img-fluid rounded" alt="Előkert térkő" />
-      </div>
-    </div>
-  </div>
 
   <div class="modal fade" id="modalKep2" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
