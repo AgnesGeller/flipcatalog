@@ -32,3 +32,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+   document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("orderForm");
+
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const cards = document.querySelectorAll(".filter-card");
+
+  filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const selected = button.dataset.category;
+
+      cards.forEach(card => {
+        const tags = card.dataset.category || "";
+        const show = selected === "all" || tags.includes(selected);
+        card.style.display = show ? "" : "none";
+      });
+    });
+  });
+});
