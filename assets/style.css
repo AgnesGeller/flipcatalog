@@ -428,6 +428,10 @@ hr {
   text-align: center;
 }
 
+.filter-btn.active {
+  background-color: #2e7d32;
+  color: white;
+}
 .plant-btn {
   background-color: #2e7d32;
   color: #fff;

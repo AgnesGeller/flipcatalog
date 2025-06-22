@@ -18,7 +18,7 @@
     <!-- Telefonszám linkként -->
    <p class="text-center mt-3">
   <a href="tel:+36301234567" class="telefon-link">
-    <span class="icon">📞</span> +36 30 123 4567 – Hívj most!
+    <span class="icon">📞</span> +36 70 634 9630 – Hívj most!
   </a>
 </p>
   </div>
@@ -161,15 +161,20 @@
   <h3 class="text-center mb-4">🌱 Növénykatalógus</h3>
 
   <!-- Szűrő gombsor -->
-  <div class="text-center mb-4">
-    <button class="btn btn-outline-success filter-btn" data-category="all">🌿 Összes</button>
-    <button class="btn btn-outline-success filter-btn" data-category="napos">🌞 Napos</button>
-    <button class="btn btn-outline-success filter-btn" data-category="arnyekos">🌤️ Árnyékos</button>
-    <button class="btn btn-outline-success filter-btn" data-category="evelo">🌸 Évelő</button>
-  </div>
-
+<!-- Szűrő gombsor -->
+<div class="text-center mb-4 d-flex flex-wrap justify-content-center gap-2">
+  <button class="btn btn-outline-success filter-btn" data-category="all">🌿 Összes</button>
+  <button class="btn btn-outline-success filter-btn" data-category="napos">🌞 Napos</button>
+  <button class="btn btn-outline-success filter-btn" data-category="arnyekos">🌤️ Árnyékos</button>
+  <button class="btn btn-outline-success filter-btn" data-category="evelo">🌸 Évelő</button>
+  <button class="btn btn-outline-success filter-btn" data-category="viragos">🌼 Virágos</button>
+  <button class="btn btn-outline-success filter-btn" data-category="mehbarat">🐝 Méhbarát</button>
+  <button class="btn btn-outline-success filter-btn" data-category="alacsony">🌿 Alacsony növésű</button>
+</div>
   <!-- Kártyarács -->
+    <div class="col h-100 filter-card" data-category="napos evelo mehbarat alacsony viragos"></div>
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+    
 
     <!-- 1. Növény: Hortenzia -->
     <div class="col h-100 filter-card" data-category="napos evelo">
@@ -245,6 +250,127 @@
         </div>
       </div>
     </div>
+    <!-- 4. Növény: Levendula -->
+<div class="col h-100 filter-card" data-category="napos evelo">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front text-center p-3 d-flex flex-column justify-content-between">
+        <div>
+          <img src="assets/img/levander.jpg" alt="Levendula" class="img-fluid rounded mb-2" />
+          <h5 class="mt-2">🌿 Levendula ‘Hidcote’</h5>
+        </div>
+        <button class="btn plant-btn mt-3" onclick="this.closest('.flip-card-inner').style.transform = 'rotateY(180deg)'">
+          📦 Részletek (1 790 Ft)
+        </button>
+      </div>
+      <div class="flip-card-back p-3 text-white d-flex flex-column justify-content-center align-items-center">
+        <h5>🌞 Napos, száraz hely</h5>
+        <p>Illatos, alacsony bokor, szürke levelű, méhbarát.</p>
+        <p class="fw-bold">Ár: 1 790 Ft</p>
+        <button class="btn btn-light mt-3" onclick="this.closest('.flip-card-inner').style.transform = 'rotateY(0deg)'">
+          🔙 Vissza
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 5. Növény: Árnyékliliom -->
+<div class="col h-100 filter-card" data-category="arnyekos evelo">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front text-center p-3 d-flex flex-column justify-content-between">
+        <div>
+          <img src="assets/img/arnyek.jpg" alt="Árnyékliliom" class="img-fluid rounded mb-2" />
+          <h5 class="mt-2">🌿 Árnyékliliom ‘Elegans’</h5>
+        </div>
+        <button class="btn plant-btn mt-3" onclick="this.closest('.flip-card-inner').style.transform = 'rotateY(180deg)'">
+          📦 Részletek (2 200 Ft)
+        </button>
+      </div>
+      <div class="flip-card-back p-3 text-white d-flex flex-column justify-content-center align-items-center">
+        <h5>🌤️ Árnyékos, nedves hely</h5>
+        <p>Impozáns nagy levél, remek árnyéki szegélynövény.</p>
+        <p class="fw-bold">Ár: 2 200 Ft</p>
+        <button class="btn btn-light mt-3" onclick="this.closest('.flip-card-inner').style.transform = 'rotateY(0deg)'">
+          🔙 Vissza
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 6. Növény: Macskamenta -->
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front text-center p-3 d-flex flex-column justify-content-between">
+        <div>
+          <img src="assets/img/cat.jpg" alt="Macskamenta" class="img-fluid rounded mb-2" />
+          <h5 class="mt-2">🌸 Macskamenta 'Walker’s Low'</h5>
+        </div>
+        <button class="btn plant-btn mt-3" onclick="this.closest('.flip-card-inner').style.transform = 'rotateY(180deg)'">
+          📦 Részletek (1 590 Ft)
+        </button>
+      </div>
+      <div class="flip-card-back p-3 text-white d-flex flex-column justify-content-center align-items-center">
+        <h5>🌞 Napos, száraz terület</h5>
+        <p>Virágzó szegélynövény, illatos, egész nyáron virágzik.</p>
+        <p class="fw-bold">Ár: 1 590 Ft</p>
+        <button class="btn btn-light mt-3" onclick="this.closest('.flip-card-inner').style.transform = 'rotateY(0deg)'">
+          🔙 Vissza
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col h-100 filter-card" data-category="napos viragos">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front text-center p-3 d-flex flex-column justify-content-between">
+        <div>
+          <img src="assets/img/poppy.jpg" alt="Díszpipacs" class="img-fluid rounded mb-2" />
+          <h5 class="mt-2">🌼 Díszpipacs (Papaver orientale)</h5>
+        </div>
+        <button class="btn plant-btn mt-3" onclick="this.closest('.flip-card-inner').style.transform='rotateY(180deg)'">
+          📦 Részletek (1 250 Ft)
+        </button>
+      </div>
+      <div class="flip-card-back p-3 text-white d-flex flex-column justify-content-center align-items-center">
+        <h5>🌞 Napos virágágyás</h5>
+        <p>Nagy méretű, élénkvörös virágokkal díszít kora nyáron.</p>
+        <p class="fw-bold">Ár: 1 250 Ft</p>
+        <button class="btn btn-light mt-3" onclick="this.closest('.flip-card-inner').style.transform='rotateY(0deg)'">
+          🔙 Vissza
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col h-100 filter-card" data-category="napos viragos alacsony">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front text-center p-3 d-flex flex-column justify-content-between">
+        <div>
+          <img src="assets/img/ros.jpg" alt="Porcsinrózsa" class="img-fluid rounded mb-2" />
+          <h5 class="mt-2">🌺 Porcsinrózsa</h5>
+        </div>
+        <button class="btn plant-btn mt-3" onclick="this.closest('.flip-card-inner').style.transform='rotateY(180deg)'">
+          📦 Részletek (990 Ft)
+        </button>
+      </div>
+      <div class="flip-card-back p-3 text-white d-flex flex-column justify-content-center align-items-center">
+        <h5>🌞 Napfénykedvelő, szárazságtűrő</h5>
+        <p>Színes, tarka virágok, kiváló ágyásokba és balkonládába.</p>
+        <p class="fw-bold">Ár: 990 Ft</p>
+        <button class="btn btn-light mt-3" onclick="this.closest('.flip-card-inner').style.transform='rotateY(0deg)'">
+          🔙 Vissza
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
 
   </div> <!-- /row -->
 </section>
@@ -425,7 +551,7 @@
     <!-- Telefonszám linkként -->
    <p class="text-center mt-3">
   <a href="tel:+36301234567" class="telefon-link">
-    <span class="icon">📞</span> +36 30 123 4567 – Hívj most!
+    <span class="icon">📞</span> +36 70 634 9630 – Hívj most!
   </a>
 </p>
   <div class="mt-5 signature text-center">
