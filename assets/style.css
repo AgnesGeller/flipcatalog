@@ -497,3 +497,16 @@ hr {
   background-color: #dff0e0;
   color: #1a5a22;
 }
+
+@media (max-width: 768px) {
+  .telefon-gomb {
+    background-color: rgba(25, 135, 84, 0.8); /* Bootstrap zöld alap áttetszőbb */
+    border-color: rgba(25, 135, 84, 0.6);
+    color: #fff;
+  }
+
+  .telefon-gomb:hover {
+    background-color: rgba(25, 135, 84, 1);
+    border-color: rgba(25, 135, 84, 1);
+  }
+}
