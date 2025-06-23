@@ -16,11 +16,12 @@
     <p class="lead animate-fade-in delay-1">Természetes megoldások a kert minden évszakára</p>
 
     <!-- Telefonszám linkként -->
-   <p class="text-center mt-3">
-  <a href="tel:+36706349630" class="telefon-link">
-    <span class="icon">📞</span> +36 70 634 9630 – Hívj most!
+  <!-- Statikus hívásgomb -->
+<div class="text-center my-3">
+  <a href="tel:+36706349630" class="btn btn-success btn-lg">
+    📞 Hívj most: +36 70 634 9630
   </a>
-</p>
+</div>
   </div>
 </header>
   <main class="container book">
@@ -41,7 +42,6 @@
         </ul>
       </div>
     </div>
-
     <!-- Megbízhatóság -->
     <div class="col">
       <div class="p-3 border rounded bg-light-green shadow-sm h-100 animate-rise delay-1">
@@ -374,7 +374,7 @@
 
   </div> <!-- /row -->
 </section>
-  <!-- Oldal 6 – Elégedett ügyfelek -->
+ <!-- Oldal 6 – Elégedett ügyfelek -->
 <section class="page p-4">
   <h3 class="text-center mb-4">💬 Elégedett ügyfeleink</h3>
 
@@ -382,33 +382,53 @@
     <div class="col">
       <div class="p-3 border rounded shadow-sm bg-light h-100">
         <p class="mb-2">„A kertünk teljesen újjászületett. A csapat precíz, gyors és nagyon segítőkész volt.”</p>
+        <div class="text-warning mb-1">★★★★★</div>
         <small class="text-muted">– Katalin (Székesfehérvár)</small>
       </div>
     </div>
     <div class="col">
       <div class="p-3 border rounded shadow-sm bg-light h-100">
         <p class="mb-2">„Imádjuk az új kerti tavat! A növények is gyönyörűen beálltak.”</p>
+        <div class="text-warning mb-1">★★★★★</div>
         <small class="text-muted">– Ádám és Noémi (Veresegyház)</small>
       </div>
     </div>
     <div class="col">
       <div class="p-3 border rounded shadow-sm bg-light h-100">
         <p class="mb-2">„Az első pillanattól profi kiszolgálást kaptunk. Biztosan rendelünk még!”</p>
+        <div class="text-warning mb-1">★★★★★</div>
         <small class="text-muted">– Erika (Győr)</small>
       </div>
     </div>
     <div class="col">
       <div class="p-3 border rounded shadow-sm bg-light h-100">
         <p class="mb-2">„A katalógus alapján választottam, és pontosan azt kaptam, amit szerettem volna.”</p>
+        <div class="text-warning mb-1">★★★★★</div>
         <small class="text-muted">– Tamás (Békéscsaba)</small>
       </div>
     </div>
   </div>
 
-  <div class="text-center">
-    <img src="./assets/img/Kép. (25).jpg" class="img-fluid rounded mb-3 shadow" style="max-width: 80%;" alt="Referencia kert 1" />
-    <p class="text-muted">Egy ügyfél kedvenc japánkertje – tele a mi növényeinkkel 🌿</p>
+<div class="text-center mt-4">
+  <img src="assets/img/Kép. (25).jpg"
+       class="img-fluid rounded shadow referencia-kep"
+       alt="Japánkert referencia"
+       data-bs-toggle="modal"
+       data-bs-target="#japanKertModal"
+       style="cursor: zoom-in;" />
+  <p class="text-muted mt-2">Egy ügyfél kedvenc japánkertje – tele a mi növényeinkkel 🌿</p>
+</div>
+
+<!-- Modal – nagyított kép -->
+<div class="modal fade" id="japanKertModal" tabindex="-1" aria-labelledby="japanKertModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content bg-transparent border-0">
+      <div class="modal-body text-center p-0">
+        <img src="assets/img/Kép. (25).jpg" alt="Japánkert teljes nézet" class="img-fluid rounded" />
+      </div>
+    </div>
   </div>
+</div>
 </section>
 
 <!-- Oldal 7 – Szolgáltatási csomagok és árlista -->

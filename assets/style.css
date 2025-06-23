@@ -463,3 +463,28 @@ hr {
     max-height: 150px;
   }
 }
+
+.referencia-kep {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 12px;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .referencia-kep {
+    max-width: 100%;
+    border-radius: 0;
+    aspect-ratio: auto;
+  }
+}
+.modal-backdrop.show {
+  backdrop-filter: blur(4px);
+}
+
+.modal-content {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
