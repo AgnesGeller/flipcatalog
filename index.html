@@ -419,13 +419,25 @@
   <p class="text-muted mt-2">Egy ügyfél kedvenc japánkertje – tele a mi növényeinkkel 🌿</p>
 </div>
 
-<!-- Modal – nagyított kép -->
-<div class="modal fade" id="japanKertModal" tabindex="-1" aria-labelledby="japanKertModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl">
-    <div class="modal-content bg-transparent border-0">
-      <div class="modal-body text-center p-0">
-        <img src="assets/img/Kép. (25).jpg" alt="Japánkert teljes nézet" class="img-fluid rounded" />
+<div class="modal fade" id="japanKertModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content position-relative bg-transparent border-0">
+      
+      <!-- BEZÁRÓ GOMB ITT -->
+
+      <!-- Modal tartalom -->
+      <div class="modal-body p-0 text-center">
+        <img src="assets/img/Kép. (25).jpg"
+             alt="Japánkert teljes nézet"
+             class="img-fluid rounded shadow" />
+             <button type="button"
+        class="modal-close-japan btn btn-light position-absolute top-0 end-0 m-3 px-3 py-2"
+        data-bs-dismiss="modal"
+        aria-label="Vissza">
+  🔙 Vissza
+</button>
       </div>
+
     </div>
   </div>
 </div>

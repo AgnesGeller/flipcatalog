@@ -481,10 +481,19 @@ hr {
     aspect-ratio: auto;
   }
 }
-.modal-backdrop.show {
-  backdrop-filter: blur(4px);
+.modal-close-japan {
+  background-color: white; /* vagy #fefefe */
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2e7d32;
+  border: 1px solid #cccccc;
+  border-radius: 50px;
+  padding: 0.75rem 1.25rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
 }
 
-.modal-content {
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+.modal-close-japan:hover {
+  background-color: #dff0e0;
+  color: #1a5a22;
 }
